@@ -1,0 +1,75 @@
+@charset"UTF-8";
+*{margin: 0px;box-sizing: border-box;}
+html{scroll-behavior: smooth;} html,body{height: 100%;width: 100%;}body{font-family: Arial,sans-serif;}
+h1{font-size: 55px;}
+/*Preloader*/
+.preloader{width: 100%;height: 100%;position: fixed;top: 0;left: 0;background-color: #fff;align-items: center;z-index: 9999;justify-content: center;transition: 0.9s}
+.spinner{position: relative;height: 100%;width: 100%;}
+.spinner::before{content: ""; position: absolute;top: 50%;left: 50%; width: 65px;height: 65px;border-radius: 50%;background-color: transparent;border:1px solid #333;border-top-color: #fff; animation: rotate 0.9s infinite;}
+@keyframes rotate{
+	to{transform: rotate(360deg);}
+}
+/*Main css file by Hmabiola*/
+#home{width: 100%;background-image: url(images/home-bg.jpg); height: 100vh;padding: 20px 50px;display: block;background-size: cover; background-position: center;background-attachment: fixed;background-repeat: no-repeat;}
+.home{float: right;margin-right: 20px;margin-top: 30vh;direction: ltr;width: 650px;text-align: right;color: #fff;}
+.home p{margin: 20px 0px;}
+.home a{text-decoration: none;color: #fff;background-color: #000;transition: 0.8s;border-radius: 30px;font-size: 13px;margin-top: 20px; padding:15px 20px;display: inline-block;}
+.home a:hover{background-color: #fff;color: #000;}section{padding: 50px 4%;background-color: #f5f5f5; margin: 0px auto;overflow: hidden;}
+.doing{text-align: center;padding: 50px;}.doing h2,.doing h3,.image h3,.design h2{font-weight: bold;}
+.doing >div{padding: 50px 0px;display: flex;flex-wrap: nowrap;}
+.doing .graphics{width: 24%;margin:30px 1.30%;background-color: #fff;margin-top: 10px; margin-left: 0px;float: left;padding:50px 20px; padding-bottom: 30px; border-radius: 7px; margin-bottom: 10px;}
+#illustrate{margin: inherit;}
+#photo{background-color: #222;padding: 60px 20px;margin-top: -10px;}#photo h3{color: #fff;}
+.graphics p{line-height: 25px;color: #666;font-size: 17px;}
+.doing .graphics:hover{margin-top: -5px;transition: 0.5s;background-color: #222; color: #fff; margin-bottom: 20px;cursor: crosshair;}
+section.second{background-color: #f9f9f9;}
+#photo:hover{margin-top: -12px;}#photo:hover .doing > div{display: block;}
+.doing .fa{font-size: 50px;color: #5e6dc2;}.photo .fa{color: #fff;} .doing .graphics:hover .fa{color: #fff;}
+.design,.image{padding: 50px;}.image h3{font-size: 30px;}
+.image div:first-child{width: 38%;float: left;margin-right: 2%;}.image img{border-radius: 10px;}
+.image span{width: 80%;margin: 0px auto;display: block;}.text,{font-size: 125%;}.text p{color: #555;}
+.image .fa{font-size: 20px;display: inline-block;margin: 10px;transition: 0.3s;padding: 10px;border-radius:50%;background-color: #f2f2f2;}
+.image .fa:hover{cursor: pointer; margin-top: -5px; font-size: 25px;background-color: #222;color: #fff;}
+.text h3{margin: 30px 0px;}p.ele{margin: 20px 0px;}.design{text-align: center;}
+.design > span{margin: 20px 0px;display: flex;flex-wrap: nowrap;}
+.design span > div{position: relative; width: 32%;float: left;margin: 10px 1%;border-radius: 10px;overflow: hidden;}
+.opacity{position: absolute;top: 0px;background-color: #5e6dc2;width: 100%;height: 100%;opacity: 0;transition: 0.5s; padding: 50px;}
+.opacity{font-weight:bold;font-size: 150%;}.opacity h1,.opacity h6{font-weight: bold;font-size: 100%;text-align: left;}
+.opacity h6{color: #fff;}
+.design span > div:hover{cursor: crosshair;}.design span > div:hover .opacity{opacity: 1;}
+.contact h2{font-size: 200%;font-weight: bold;}
+footer .fa,.contact .fa{font-size: 18px;color: #555;}
+.contact form{width: 50%;float: left;}
+.some{display: flex;flex-wrap: wrap;width: 100%;}.some div{width: 50%;float: left;padding:0px 20px;}
+input{width: 48%;margin-right: 2%;padding: 10px;border:0px;border-bottom: 1px ridge #888;}
+input[type="email"]{margin-right: 0px;}.some h2{margin: 0px;}.contact p{margin: 20px 0px;}
+textarea{margin: 20px 0px;width: 100%;height: 150px;padding:10px;border:0px;border-bottom: 1px ridge #888;}
+input,textarea{background-color: #f9f9f9;font-size: 20px; color: #555;}
+.some a{text-decoration: none;color: inherit;}.some a:hover{text-decoration: underline;}
+input[type="submit"]{padding: 10px 5px;border-radius: 30px; float: right;font-size: 18px;display: inline-block;background-color: #222;color: #fff;transition: 0.5s;}
+input[type="submit"]:hover{background-color: #5e6dc2;}
+footer{padding: 100px;background-color: #5e6dc2;color: #f5f5f5;text-align: center;font-size: 18px;}
+footer p{font-size: 15px;}
+footer .fa{background-color: #fff;padding: 15px;color: #222;border-radius: 50%;margin: 10px;}
+footer .fa:hover{font-size: 20px;background-color: #222;color: #fff;cursor: pointer;}
+
+@media screen and (max-width: 1000px){
+  .doing > div{display: block;}
+  .design,.image{padding: 50px 0px;}
+  .design > span{display: block;}
+  .doing .graphics{width: 48%;float: left;margin: 20px 0px;}
+  #illustrate,#photo{width: 48%;margin-left: 2%;}
+  .illustrate{margin-left: 2%;}
+  .image div:first-child{width: 100%;margin: 10px 0px;}
+}
+@media screen and (max-width: 800px){
+  section{padding: 50px 20px}#home{padding: 20px 10px;}
+  .doing{padding: 0px;}.home{margin-right: 0px; width: 500px;}
+  .doing .graphics,#illustrate,#photo{width: 100%;margin: 10px 0px;}
+  #photo{margin: 20px 0px;}
+  .design span > div{width: 100%;margin: 10px 0px;}
+  .some{display: block;}input{width: 100%;margin-right: 0px;margin-top: 10px;}
+  .some div,.contact form{width: 100%;margin: 10px 0px;}
+  .some div{padding: 0px;}
+  footer{padding: 50px 20px;}
+}
